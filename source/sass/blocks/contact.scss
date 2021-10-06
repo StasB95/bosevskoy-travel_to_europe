@@ -1,0 +1,30 @@
+.contact_title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    margin: 0;
+    margin-left: 65px;
+}
+
+.contact_mail {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: $basic__pink;
+    margin-left: 65px;
+    margin-top: 10px;
+}
+
+.contact_tel {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    color: $basic__pink;
+    margin-left: 65px;
+    margin-top: 22px;
+}

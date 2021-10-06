@@ -1,0 +1,43 @@
+.catalog {
+    position: relative;
+    display: grid;
+    width: 1170px;
+    height: 1269px;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+
+.catalog_title {
+    width: 358px;
+    height: 160px;
+    margin: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 80px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 192px;
+        left: 0;
+        width: 229px;
+        height: 4px;
+        background-color: $basic__pink;
+      }
+}
+
+.catalog_text {
+    width: 328px;
+    height: 56px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.catalog_card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

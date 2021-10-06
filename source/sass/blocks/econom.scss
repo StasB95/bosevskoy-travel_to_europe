@@ -1,0 +1,77 @@
+.econom_title {
+    width: 310px;
+    height: 34px;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 30px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    color: $basic__pink;
+}
+
+.econom_text {
+    position: relative;
+    width: 289px;
+    margin-left: 30px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 78px;
+        left: 0;
+        width: 310px;
+        height: 2px;
+        background-color: $basic__pink;
+    }
+}
+
+.econom_list   {
+    margin-top: 60px;
+    list-style: none;
+}
+
+.econom_item {
+    position: relative;
+    width: 200px;
+    margin-left: 15px;
+    margin-top: 11px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: -24px;
+        width: 14px;
+        height: 12px;
+        background-image: url(../img/path_pink.png);
+        background-repeat: no-repeat;
+    }
+}
+
+.econom_button {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: $basic__white;
+    width: 310px;
+    height: 75px;
+    margin-top: 30px;
+    margin-left: 30px;
+    border: none;
+    background-color: $basic__pink;
+
+    &:hover {
+        background-color: $basic__dark-pink;
+    }
+}

@@ -1,0 +1,24 @@
+.travel_title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    margin: 0;
+}
+
+.travel_country {
+    margin-top: 10px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.travel_item {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    display: grid;
+    overflow: 50%;
+}
