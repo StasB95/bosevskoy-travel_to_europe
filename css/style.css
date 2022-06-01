@@ -11137,7 +11137,7 @@ ul {
   font-weight: 700;
   font-size: 50px;
   line-height: 68px;
-  color: #FFFFFF;
+  color: #FDFDFD;
 }
 @media (max-width: 1365px) {
   .footer-title {
@@ -11162,7 +11162,7 @@ ul {
   font-weight: 300;
   font-size: 20px;
   line-height: 140%;
-  color: #FFFFFF;
+  color: #FDFDFD;
 }
 @media (max-width: 1919px) {
   .footer-text {
@@ -11394,7 +11394,7 @@ ul {
   font-weight: 300;
   font-size: 20px;
   line-height: 140%;
-  color: #FFFFFF;
+  color: #FDFDFD;
 }
 @media (max-width: 1919px) {
   .social-title {
@@ -11435,7 +11435,7 @@ ul {
   font-weight: 700;
   font-size: 20px;
   line-height: 140%;
-  color: #FFFFFF;
+  color: #FDFDFD;
   text-transform: uppercase;
 }
 .social-item:hover {
@@ -11539,7 +11539,7 @@ ul {
   font-size: 20px;
   line-height: 140%;
   transform: rotate(90deg);
-  color: #FFFFFF;
+  color: #FDFDFD;
 }
 @media (max-width: 1365px) {
   .footer-arrow {
@@ -11555,9 +11555,6 @@ ul {
 .footer-arrow-svg {
   transform: rotate(-90deg);
 }
-
-
-.case-israel-content-wrapper
 
 
 /*# sourceMappingURL=style.css.map */
