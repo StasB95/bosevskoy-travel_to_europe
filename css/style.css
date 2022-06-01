@@ -31,7 +31,7 @@ img {
   font-family: "Satoshi-Regular", sans-serif;
   line-height: 18px;
   color: #303030;
-  background-color: #FFFFFF;
+  background-color: #FDFDFD;
 }
 body {
   margin: 0;
@@ -71,6 +71,13 @@ ul {
   font-display: swap;
   src: url("../fonts/Satoshi-Regular.woff2") format("woff2"), url("../fonts/Satoshi-Regular.woff") format("woff");
 }
+@font-face {
+  font-family: "Satoshi-Light";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/Satoshi-light.woff2") format("woff2"), url("../fonts/Satoshi-light.woff") format("woff");
+}
 .nav {
   position: relative;
   display: flex;
@@ -97,6 +104,26 @@ ul {
     width: 328px;
     background-color: green;
   }
+}
+.header-arrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80px;
+  height: 28px;
+  position: absolute;
+  right: -104px;
+  bottom: -395px;
+  font-family: "Satoshi-Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  transform: rotate(90deg);
+}
+.header-arrow-svg {
+  display: block;
+  transform: rotate(90deg);
 }
 .nav-list {
   position: absolute;
@@ -147,7 +174,7 @@ ul {
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
-    color: #FDFDFD;
+    color: #FFFFFF;
     text-align: center;
   }
 }
@@ -349,7 +376,7 @@ ul {
   font-weight: 700;
   font-size: 50px;
   line-height: 68px;
-  color: #FDFDFD;
+  color: #FFFFFF;
   margin: 151px 0 100px 0;
 }
 @media (max-width: 1919px) {
@@ -377,7 +404,7 @@ ul {
   font-weight: 400;
   font-size: 20px;
   line-height: 140%;
-  color: #FDFDFD;
+  color: #FFFFFF;
 }
 @media (max-width: 1919px) {
   .about-text {
@@ -495,7 +522,7 @@ ul {
   font-weight: 700;
   font-size: 150px;
   line-height: 203px;
-  color: #FDFDFD;
+  color: #FFFFFF;
 }
 @media (max-width: 1919px) {
   .card-text {
@@ -633,7 +660,7 @@ ul {
   height: 420px;
   margin-left: 20px;
   border-top: 3px solid #303030;
-  background-color: #FDFDFD;
+  background-color: #FFFFFF;
 }
 @media (max-width: 1919px) {
   .industries-card {
@@ -933,6 +960,14 @@ ul {
     line-height: 140%;
   }
 }
+.portfolio-card-name2 {
+  font-family: "Satoshi-Medium", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  margin-top: 20px;
+}
 .services {
   position: relative;
   width: 1300px;
@@ -1027,7 +1062,7 @@ ul {
 }
 .services-sutitle_active {
   color: #28C0E2;
-  margin-bottom: -3px;
+  margin-bottom: -2px;
   border-bottom: 2px solid #28C0E2;
 }
 .services-text,
@@ -1102,6 +1137,9 @@ ul {
     width: 328px;
     height: 300px;
   }
+}
+.header-arrow-company {
+  bottom: -205px;
 }
 .company-subtitle {
   width: 1300px;
@@ -1221,6 +1259,9 @@ ul {
     height: 940px;
   }
 }
+.information_title_blue {
+  color: #28C0E2;
+}
 .information_title {
   width: 579px;
   height: 406px;
@@ -1231,7 +1272,7 @@ ul {
   font-weight: 700;
   font-size: 150px;
   line-height: 203px;
-  color: #FDFDFD;
+  color: #FFFFFF;
 }
 @media (max-width: 1919px) {
   .information_title {
@@ -1273,7 +1314,7 @@ ul {
   font-weight: 400;
   font-size: 20px;
   line-height: 140%;
-  color: #FDFDFD;
+  color: #FFFFFF;
 }
 @media (max-width: 1919px) {
   .information_text {
@@ -1359,7 +1400,7 @@ ul {
   font-weight: 900;
   font-size: 70px;
   line-height: 95px;
-  color: #FDFDFD;
+  color: #FFFFFF;
 }
 @media (max-width: 1365px) {
   .information_item_subtitle {
@@ -1375,7 +1416,7 @@ ul {
   font-weight: 400;
   font-size: 20px;
   line-height: 140%;
-  color: #FDFDFD;
+  color: #FFFFFF;
 }
 @media (max-width: 1919px) {
   .information_item_text {
@@ -1461,7 +1502,7 @@ ul {
 }
 .value-card-wrapper {
   width: 360px;
-  margin: 70px auto 30px auto;
+  margin: 70px auto 27px auto;
   display: flex;
   justify-content: space-between;
 }
@@ -1559,6 +1600,7 @@ ul {
 .process-img {
   width: 530px;
   height: 800px;
+  border-radius: 12px;
   background-color: #E5E5E5;
 }
 @media (max-width: 1919px) {
@@ -1811,7 +1853,7 @@ ul {
   }
 }
 .team-name {
-  margin-top: 15px;
+  margin-top: 12px;
   margin-bottom: 7px;
   font-family: "Satoshi-Bold", sans-serif;
   font-style: normal;
@@ -1843,7 +1885,7 @@ ul {
   width: 1920px;
   margin: 0 auto;
   margin-top: 100px;
-  margin-bottom: -200px;
+  margin-bottom: -204px;
 }
 @media (max-width: 1919px) {
   .company-photo {
@@ -1863,6 +1905,9 @@ ul {
     width: 360px;
     margin-bottom: -70px;
   }
+}
+.header-arrow-service {
+  bottom: -205px;
 }
 .ddt-subtitle {
   width: 1300px;
@@ -2008,7 +2053,7 @@ ul {
   font-weight: 700;
   font-size: 150px;
   line-height: 203px;
-  color: #FDFDFD;
+  color: #FFFFFF;
 }
 @media (max-width: 1919px) {
   .ddt-information_title {
@@ -2048,7 +2093,7 @@ ul {
   font-weight: 400;
   font-size: 20px;
   line-height: 140%;
-  color: #FDFDFD;
+  color: #FFFFFF;
 }
 @media (max-width: 1919px) {
   .ddt-information_text {
@@ -5577,8 +5622,14 @@ ul {
     line-height: 140%;
   }
 }
-.careers-subtitle {
+.header-arrow-careers {
+  bottom: -205px;
+}
+.careers-text {
   width: 1300px;
+  margin: 0 auto;
+}
+.careers-subtitle {
   margin: 150px auto 20px auto;
   text-align: left;
   font-family: "Satoshi-Bold", sans-serif;
@@ -5610,8 +5661,7 @@ ul {
   }
 }
 .careers-title {
-  width: 1300px;
-  margin: 0 auto;
+  width: 740px;
   margin-bottom: 150px;
   font-family: "Satoshi-Black", sans-serif;
   font-style: normal;
@@ -5673,7 +5723,6 @@ ul {
 .careers-information-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 1300px;
   height: 600px;
   margin: 0 auto;
@@ -5700,12 +5749,13 @@ ul {
 .careers-information_title {
   width: 713px;
   height: 406px;
+  margin-top: 100px;
   font-family: "Satoshi-Bold", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 150px;
   line-height: 203px;
-  color: #FDFDFD;
+  color: #FFFFFF;
 }
 @media (max-width: 1919px) {
   .careers-information_title {
@@ -5731,15 +5781,19 @@ ul {
     line-height: 81px;
   }
 }
+.careers-information_texts {
+  margin-top: 165px;
+}
 .careers-information_text {
   width: 530px;
   height: auto;
+  margin-bottom: 19px;
   font-family: "Satoshi-Regular", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 140%;
-  color: #FDFDFD;
+  color: #FFFFFF;
 }
 @media (max-width: 1919px) {
   .careers-information_text {
@@ -5767,7 +5821,7 @@ ul {
   width: 1300px;
   height: 802px;
   margin: 0 auto;
-  margin-top: 200px;
+  margin-top: 194px;
   display: flex;
 }
 @media (max-width: 1919px) {
@@ -5826,7 +5880,7 @@ ul {
   }
 }
 .careers-vacancy-text {
-  width: 310px;
+  width: 290px;
   font-family: "Satoshi-Regular", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -5868,6 +5922,7 @@ ul {
 }
 .vacancy-card {
   align-items: flex-start;
+  border-left: 1px solid #A0A0A0;
 }
 .vacancy-card-no-current {
   width: 860px;
@@ -5896,6 +5951,11 @@ ul {
     height: 300px;
   }
 }
+.vacancy-card-no-current-text {
+  display: block;
+  margin-left: 32px;
+  padding-top: 125px;
+}
 .careers-advantages {
   width: 1300px;
   margin: 0 auto;
@@ -5921,7 +5981,7 @@ ul {
   font-weight: 700;
   font-size: 150px;
   line-height: 203px;
-  margin: 190px 0 70px 0;
+  margin: 205px 5px 70px 0;
 }
 @media (max-width: 1919px) {
   .careers-advantages-title {
@@ -5953,6 +6013,7 @@ ul {
 .careers-pros-card {
   width: 310px;
   height: 300px;
+  margin-bottom: 20px;
   border-top: 2px solid #303030;
 }
 @media (max-width: 1919px) {
@@ -6106,7 +6167,7 @@ ul {
   }
 }
 .portfolio-text {
-  margin-top: 43px;
+  margin-top: 50px;
   font-family: "Satoshi-Bold", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -6138,7 +6199,6 @@ ul {
   margin: 0 auto;
   margin-bottom: -200px;
   display: flex;
-  background-color: #e42121;
 }
 @media (max-width: 1919px) {
   .portfolio-case {
@@ -6158,7 +6218,7 @@ ul {
   }
 }
 .portfolio-case-desc {
-  width: 440px;
+  width: 445px;
   height: 960px;
   border-right: 1px solid #A0A0A0;
 }
@@ -6202,7 +6262,7 @@ ul {
   }
 }
 .portfolio-case-desc-text {
-  width: 310px;
+  width: 309px;
   height: 140px;
   margin-top: 30px;
   font-family: "Satoshi-Regular", sans-serif;
@@ -6226,6 +6286,28 @@ ul {
   .portfolio-case-desc-text {
     width: 328px;
   }
+}
+.portfolio-case-desc-button {
+  width: 120px;
+  height: 120px;
+  margin-top: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #28C0E2;
+  font-family: "Satoshi-Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+}
+.portfolio-case-desc-button:hover {
+  right: -10px;
+  bottom: 10px;
+  width: 150px;
+  height: 150px;
+}
+.portfolio-case-desc-button:active {
+  opacity: 0;
 }
 .portfolio-case-preview {
   overflow: hidden;
@@ -6268,9 +6350,8 @@ ul {
   height: 60px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin-left: 109px;
-  border-bottom: 1px solid #A0A0A0;
+  border-bottom: 2px solid #A0A0A0;
 }
 @media (max-width: 1919px) {
   .portfolio-case-iner {
@@ -6293,6 +6374,7 @@ ul {
   }
 }
 .portfolio-case-year {
+  margin-top: 18px;
   font-family: "Satoshi-Regular", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -6306,6 +6388,8 @@ ul {
   }
 }
 .portfolio-case-title {
+  margin-top: 1px;
+  margin-left: -13px;
   font-family: "Satoshi-Bold", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -6319,6 +6403,7 @@ ul {
   }
 }
 .portfolio-case-industries {
+  margin-top: 18px;
   width: 217px;
   display: flex;
   justify-content: space-between;
@@ -6375,6 +6460,7 @@ ul {
 .portfolio-case-banner {
   width: 420px;
   height: 600px;
+  border-radius: 12px;
   background-color: #E5E5E5;
 }
 @media (max-width: 1919px) {
@@ -6396,8 +6482,8 @@ ul {
   }
 }
 .portfolio-case-text {
+  margin-bottom: 18px;
   width: 310px;
-  height: 295px;
   font-family: "Satoshi-Regular", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -7021,6 +7107,9 @@ ul {
     width: 328px;
     margin: 50px auto 106px auto;
   }
+}
+.case-startup-next-svg {
+  transform: rotate(-90deg);
 }
 .case-startup-banner-next {
   display: block;
@@ -9792,7 +9881,6 @@ ul {
 .case-israel-information-wrapper {
   width: 530px;
   height: 453px;
-  background-color: #f14545;
 }
 @media (max-width: 1919px) {
   .case-israel-information-wrapper {
@@ -10267,6 +10355,9 @@ ul {
     height: 339px;
   }
 }
+.header-arrow-blog {
+  bottom: -205px;
+}
 .blog-subtitle {
   width: 1300px;
   margin: 150px auto 20px auto;
@@ -10298,6 +10389,9 @@ ul {
     margin: 50px auto 20px auto;
     width: 328px;
   }
+}
+.blog-title-blue {
+  color: #28C0E2;
 }
 .blog-title {
   width: 1300px;
@@ -10378,7 +10472,13 @@ ul {
     height: 24px;
   }
 }
+.blog-categories-item-active {
+  color: #28C0E2;
+  border-bottom: 1px solid #28C0E2;
+}
 .blog-categories-item {
+  margin-top: 20px;
+  height: 50px;
   font-family: "Satoshi-Medium", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -10391,6 +10491,17 @@ ul {
     font-size: 14px;
     line-height: 19px;
   }
+}
+.blog-categories-search {
+  margin-top: 15px;
+  margin-right: 10px;
+}
+.blog-wrapper {
+  position: relative;
+  width: 1300px;
+  height: 508px;
+  margin: 0 auto;
+  margin-bottom: 370px;
 }
 .blog-categories-subtitle {
   width: 1300px;
@@ -10421,10 +10532,9 @@ ul {
   }
 }
 .blog-popular {
-  width: 1300px;
-  margin: 0 auto;
-  margin-bottom: 200px;
+  position: absolute;
   display: flex;
+  overflow: auto;
 }
 @media (max-width: 1919px) {
   .blog-popular {
@@ -10453,7 +10563,6 @@ ul {
   .blog-popular-card {
     width: 340px;
     height: 450px;
-    background-color: red;
   }
 }
 @media (max-width: 1365px) {
@@ -10476,6 +10585,7 @@ ul {
   font-weight: 400;
   font-size: 18px;
   line-height: 140%;
+  color: #A0A0A0;
 }
 @media (max-width: 1919px) {
   .blog-popular-card-date,
@@ -10522,6 +10632,11 @@ ul {
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
+  background: linear-gradient(89.61deg, #28C0E2 -4.38%, #212121 106.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 @media (max-width: 1919px) {
   .blog-popular-card-categories,
@@ -10810,6 +10925,8 @@ ul {
   }
 }
 .privacy-text {
+  width: 1170px;
+  margin-bottom: 18px;
   font-family: "Satoshi-Regular", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -10823,7 +10940,7 @@ ul {
   }
 }
 .privacy-subtitle {
-  margin: 50px 0 30px;
+  margin: 60px 0 30px;
   font-family: "Satoshi-Bold", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -10832,6 +10949,58 @@ ul {
 }
 @media (max-width: 1365px) {
   .privacy-subtitle {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+.privacy-subtitle-2 {
+  margin: 50px 0 30px;
+}
+.privacy-subtitle-3 {
+  margin: 45px 0 30px;
+}
+.privacy-subtitle-4 {
+  margin: 50px 0 30px;
+}
+.privacy-subtitle-5 {
+  margin: 40px 0 30px;
+  font-family: "Satoshi-Bold", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+}
+@media (max-width: 1365px) {
+  .privacy-subtitle-5 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+.privacy-subtitle-6 {
+  margin: 50px 0 30px;
+  font-family: "Satoshi-Bold", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+}
+@media (max-width: 1365px) {
+  .privacy-subtitle-6 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+.privacy-subtitle-7 {
+  margin: 50px 0 30px;
+  font-family: "Satoshi-Bold", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  background-color: #f79f9f;
+}
+@media (max-width: 1365px) {
+  .privacy-subtitle-7 {
     font-size: 24px;
     line-height: 32px;
   }
@@ -10870,7 +11039,7 @@ ul {
   display: block;
   width: 100px;
   height: 20px;
-  margin: 86px 0;
+  margin: 75px 0 95px -10px;
   text-align: right;
   font-family: "Satoshi-Regular", sans-serif;
   font-style: normal;
@@ -10968,7 +11137,7 @@ ul {
   font-weight: 700;
   font-size: 50px;
   line-height: 68px;
-  color: #FDFDFD;
+  color: #FFFFFF;
 }
 @media (max-width: 1365px) {
   .footer-title {
@@ -10988,12 +11157,12 @@ ul {
   height: 112px;
   margin-top: 18px;
   margin-right: 7px;
-  font-family: "Satoshi-Regular", sans-serif;
+  font-family: "Satoshi-Light", sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 20px;
   line-height: 140%;
-  color: #FDFDFD;
+  color: #FFFFFF;
 }
 @media (max-width: 1919px) {
   .footer-text {
@@ -11030,6 +11199,7 @@ ul {
 }
 .form-wrapper {
   width: 770px;
+  margin-top: -3px;
 }
 @media (max-width: 1919px) {
   .form-wrapper {
@@ -11043,6 +11213,7 @@ ul {
 }
 .form-text {
   width: 530px;
+  margin-top: -3px;
 }
 @media (max-width: 1919px) {
   .form-text {
@@ -11066,11 +11237,11 @@ ul {
   line-height: 140%;
   color: #A0A0A0;
   width: 640px;
-  height: 44px;
+  height: 50px;
   border: none;
-  border-bottom: 1px solid #FDFDFD;
+  border-bottom: 1px solid #FFFFFF;
   background-color: #303030;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 @media (max-width: 1919px) {
   .form-name,
@@ -11102,12 +11273,12 @@ ul {
   }
 }
 .form-email {
-  height: 40px;
-  margin-bottom: 50px;
+  height: 50px;
+  margin-bottom: 40px;
 }
 .form-country {
-  height: 40px;
-  margin-bottom: 46px;
+  height: 50px;
+  margin-bottom: 40px;
 }
 .form-message {
   width: 529px;
@@ -11130,6 +11301,7 @@ ul {
 }
 .form-file {
   display: block;
+  margin-top: 15px;
   font-family: "Satoshi-Regular", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -11160,7 +11332,7 @@ ul {
 .form-button {
   position: absolute;
   right: 0;
-  bottom: 50px;
+  bottom: 45px;
   width: 120px;
   height: 120px;
   border: none;
@@ -11190,7 +11362,7 @@ ul {
 }
 .social {
   position: relative;
-  margin-top: 100px;
+  margin-top: 110px;
   width: 1300px;
   height: 200px;
   display: flex;
@@ -11217,12 +11389,12 @@ ul {
   }
 }
 .social-title {
-  font-family: "Satoshi-Regular", sans-serif;
+  font-family: "Satoshi-Light", sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 20px;
   line-height: 140%;
-  color: #FDFDFD;
+  color: #FFFFFF;
 }
 @media (max-width: 1919px) {
   .social-title {
@@ -11239,7 +11411,7 @@ ul {
 .social-list {
   display: flex;
   justify-content: space-between;
-  width: 970px;
+  width: 972px;
 }
 @media (max-width: 1919px) {
   .social-list {
@@ -11263,7 +11435,7 @@ ul {
   font-weight: 700;
   font-size: 20px;
   line-height: 140%;
-  color: #FDFDFD;
+  color: #FFFFFF;
   text-transform: uppercase;
 }
 .social-item:hover {
@@ -11334,10 +11506,14 @@ ul {
   }
 }
 .footer-arrow-privacy {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 58px;
+  height: 28px;
   position: absolute;
-  right: -20px;
-  top: -73px;
+  right: -45px;
+  top: -108px;
   font-family: "Satoshi-Regular", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -11357,13 +11533,13 @@ ul {
   position: absolute;
   right: -95px;
   top: -75px;
-  font-family: "Satoshi-Regular", sans-serif;
+  font-family: "Satoshi-Light", sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 20px;
   line-height: 140%;
   transform: rotate(90deg);
-  color: #FDFDFD;
+  color: #FFFFFF;
 }
 @media (max-width: 1365px) {
   .footer-arrow {
@@ -11379,5 +11555,9 @@ ul {
 .footer-arrow-svg {
   transform: rotate(-90deg);
 }
+
+
+.case-israel-content-wrapper
+
 
 /*# sourceMappingURL=style.css.map */
