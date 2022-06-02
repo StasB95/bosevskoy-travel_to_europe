@@ -90,6 +90,7 @@ ul {
 @media (max-width: 1919px) {
   .nav {
     width: 1060px;
+    background-color: red;
   }
 }
 @media (max-width: 1365px) {
@@ -11184,7 +11185,6 @@ ul {
   font-weight: 700;
   font-size: 36px;
   line-height: 49px;
-  background-color: #f79f9f;
 }
 @media (max-width: 1365px) {
   .privacy-subtitle-7 {
@@ -11773,5 +11773,6 @@ ul {
 .footer-arrow-svg {
   transform: rotate(-90deg);
 }
+
 
 /*# sourceMappingURL=style.css.map */
