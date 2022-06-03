@@ -2386,6 +2386,7 @@ ul {
 .ddt-process-img {
   width: 530px;
   height: 800px;
+  border-radius: 12px;
   background-color: #E5E5E5;
 }
 @media (max-width: 1919px) {
@@ -4862,7 +4863,7 @@ ul {
 .outstaff-value-card {
   width: 420px;
   height: 350px;
-  border-top: 2px solid #A0A0A0;
+  border-top: 2px solid #303030;
   background-color: #FFFFFF;
   margin-bottom: 20px;
 }
@@ -4881,7 +4882,7 @@ ul {
 .outstaff-value-card-long {
   width: 860px;
   height: 350px;
-  border-top: 2px solid #A0A0A0;
+  border-top: 2px solid #303030;
   background-color: #FFFFFF;
 }
 @media (max-width: 1919px) {
@@ -6709,7 +6710,7 @@ ul {
 }
 .portfolio-case-name {
   position: absolute;
-  right: 0;
+  right: 4px;
   bottom: 0;
   font-family: "Satoshi-Bold", sans-serif;
   font-style: normal;
@@ -11812,3 +11813,4 @@ ul {
 }
 
 /*# sourceMappingURL=style.css.map */
+outstaff-value-card
