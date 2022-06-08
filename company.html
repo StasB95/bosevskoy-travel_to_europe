@@ -15,8 +15,8 @@
             <path d="M3 0L0.113249 5H5.88675L3 0ZM2.5 4.5L2.5 40H3.5L3.5 4.5H2.5Z" fill="#303030"/>
           </svg>
         </a>
-        <a class="nav-img" href="index.html"><img src="../n-s2/img/logo.svg" alt="Nitrix"></a>
-        <a  class="nav-button-contact" href="#contact"><img src="../n-s2/img/container.svg" alt=""></a>
+        <a class="nav-img" href="index.html"><img src="../img/logo.svg" alt="Nitrix"></a>
+        <a  class="nav-button-contact" href="#contact"><img src="../img/container.svg" alt=""></a>
         <div class="nav__toggle"></div>
         <ul class="nav-list nav-closed">
           <li class="nav-item  nav-active"><a href="company.html">COMPANY</a></li>
@@ -32,7 +32,12 @@
       <section class="company-presentation">
         <h3 class="company-subtitle">about nitrix</h3>
         <h1 class="company-title">We build applications<br>people love to use</h1>
-        <img class="company-img" src="../n-s2/img/company-inf.png" alt="">
+        <picture>
+          <source media="(max-width: 1919px)" srcset="../img/company-inf-1366.png">
+          <source media="(max-width: 1365px)" srcset="">
+          <source media="(max-width: 767px)" srcset="">
+          <img class="company-img" src="../img/company-inf.png" alt="">
+        </picture>
         <div class="company-information information">
          <div class="information-wrapper">
             <h2 class="information_title">We are N<span class="information_title_blue">IT</span>RIX</h2>
@@ -80,19 +85,19 @@
               </div>
               <p class="value-card_text">One of our main advantages is meeting the deadlines. Nitrix is proud to create your project in the shortest terms which will not affect or worsen the performance of our developers.</p>
             </div>
-            <div class="value-card">
-              <div class="value-card-wrapper">
+            <div class="value-card value-card-tablet">
+              <div class="value-card-wrapper value-card-wrapper-tablet">
                 <h3 class="value-card_title">KEEPING IN TOUCH</h3>
                 <span class="value-card_number">/03</span>
               </div>
-              <p class="value-card_text">We believe that constant communication with the customers and inside the team during the development process helps us to avoid any misunderstandings and reach the best possible result.</p>
+              <p class="value-card_text value-card-text-tablet">We believe that constant communication with the customers and inside the team during the development process helps us to avoid any misunderstandings and reach the best possible result.</p>
             </div>
          </div>
         </div>
         <div class="company-process process">
-          <img src="../n-s2/img/process.png" alt="" class="process-img">
+          <img src="../img/process.png" alt="" class="process-img">
           <div class="process-inform">
-            <h2 class="process-inform_title">Our process always<br>starts with Why</h2>
+            <h2 class="process-inform_title">Our process always starts with Why</h2>
             <div class="process-step">
               <p class="process-step_number">S/01</p>
               <h3 class="process-step_title">QUESTION</h3>
@@ -116,20 +121,20 @@
           </div>
         </div>
         <div class="company-team team">
-          <h2 class="team-title">Meet the leadership driving<br>Nitrix’s progress</h2>
+          <h2 class="team-title">Meet the leadership driving Nitrix’s progress</h2>
           <div class="team-wrapper">
             <div class="team-card">
-              <img src="../n-s2/img/photo_team1.png" alt="" class="team-photo">
+              <img src="../img/photo_team1.png" alt="" class="team-photo">
               <p class="team-name">Nikita Axyonov</p>
               <p class="team-position">CEO</p>
             </div>
             <div class="team-card">
-              <img src="../n-s2/img/photo_team2.png" alt="" class="team-photo">
+              <img src="../img/photo_team2.png" alt="" class="team-photo">
               <p class="team-name">Stanislav Ivashchuk</p>
               <p class="team-position">PM</p>
             </div>
             <div class="team-card">
-              <img src="../n-s2/img/photo_team3.png" alt="" class="team-photo">
+              <img src="../img/photo_team3.png" alt="" class="team-photo">
               <p class="team-name">Polina Vasilyeva</p>
               <p class="team-position">HR</p>
             </div>
@@ -139,7 +144,7 @@
       <section>
         <h2 class="visually-hidden">Общее фото команды</h2>
         <div class="company-photo">
-          <img src="../n-s2/img/animation(temporarily).png" alt="">
+          <img src="../img/animation(temporarily).png" alt="">
         </div>
       </section>
     </main>
