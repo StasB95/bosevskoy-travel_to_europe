@@ -169,3 +169,41 @@ ddtToggleTitle3.addEventListener('click', function() {
 }) 
 
 
+let ddtArrow1 = document.querySelector('.ddt-arrow1');
+let ddtToggleArrow1 = document.querySelector('.outstaff-faq-subtitle1');
+
+ddtToggleArrow1.addEventListener('click', function() {
+  if (ddtArrow1.classList.contains('ddt-arrow-black')) {
+    ddtArrow1.classList.remove('ddt-arrow-black');
+    ddtArrow1.classList.add('ddt-arrow-blue');
+  } else {
+    ddtArrow1.classList.add('ddt-arrow-black');
+    ddtArrow1.classList.remove('ddt-arrow-blue')
+  }
+}) 
+
+let ddtArrow2 = document.querySelector('.ddt-arrow2');
+let ddtToggleArrow2 = document.querySelector('.outstaff-faq-subtitle2');
+
+ddtToggleArrow2.addEventListener('click', function() {
+  if (ddtArrow2.classList.contains('ddt-arrow-black')) {
+    ddtArrow2.classList.remove('ddt-arrow-black');
+    ddtArrow2.classList.add('ddt-arrow-blue');
+  } else {
+    ddtArrow2.classList.add('ddt-arrow-black');
+    ddtArrow2.classList.remove('ddt-arrow-blue')
+  }
+}) 
+
+let ddtArrow3 = document.querySelector('.ddt-arrow3');
+let ddtToggleArrow3 = document.querySelector('.outstaff-faq-subtitle3');
+
+ddtToggleArrow3.addEventListener('click', function() {
+  if (ddtArrow3.classList.contains('ddt-arrow-black')) {
+    ddtArrow3.classList.remove('ddt-arrow-black');
+    ddtArrow3.classList.add('ddt-arrow-blue');
+  } else {
+    ddtArrow3.classList.add('ddt-arrow-black');
+    ddtArrow3.classList.remove('ddt-arrow-blue')
+  }
+}) 

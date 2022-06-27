@@ -12,6 +12,20 @@ navToggle.addEventListener('click', function() {
   }
 });
 
+let navBurger = document.querySelector('.nav__toggle');
+let navToggleBurger = document.querySelector('.nav__toggle');
+
+
+navToggleBurger.addEventListener('click', function() {
+  if (navBurger.classList.contains('burger_close')) {
+    navBurger.classList.remove('burger_close');
+    navBurger.classList.add('burger_active');
+  } else {
+    navBurger.classList.add('burger_close');
+    navBurger.classList.remove('burger_active');
+  }
+});
+
 
 // let ddtTitle = document.querySelector('.ddtitle');
 // let ddtToggleTitle = document.querySelector('.ddt-faq-subtitle');
