@@ -9,14 +9,14 @@
   <body class="page">
     <header class="page-header">
       <nav class="nav " id="arrow-up">
-        <a href="#arrow-down" class="header-arrow header-arrow-service">
+        <a href="#arrow-down" class="header-arrow-service">
           <span>Scroll</span>
           <svg  class="header-arrow-svg" width="6" height="40" fill="none">
             <path d="M3 0L0.113249 5H5.88675L3 0ZM2.5 4.5L2.5 40H3.5L3.5 4.5H2.5Z" fill="#303030"/>
           </svg>
         </a>
         <a class="nav-img" href="index.html"><img src="../n-s2/img/logo.svg" alt="Nitrix"></a>
-        <a  class="nav-button-contact" href="#contact"><img src="../n-s2/img/container.svg" alt=""></a>
+        <a  href="#contact"><img class="nav-button-contact" src="../n-s2/img/container.svg" alt=""></a>
         <div class="nav__toggle burger_close">
           <span class="burger__line burger__line_second"></span>
           <span class="burger__line burger__line_third"></span>
@@ -28,21 +28,41 @@
           </li>
           <li class="nav-item"><a href="company.html">COMPANY</a></li>
           <li class="nav-item"><a href="portfolio.html">PORTFOLIO</a></li>
-          <li class="nav-item  hover-item-service">
-            <a class=" nav-active" href="service_ddt.html">SERVICES</a>
+          <li class="hover-item-service">
+            <a class="nav-active hover-item-service-link" href="service_ddt.html">SERVICES</a>
+            <span class="service-tablet-toggle">SERVICES</span>
+            <div class="service-tablet service-tablet-close">
+              <a class="service-tablet-link" href="service_ddt.html">DDT</a>
+              <a class="service-tablet-link" href="service_outstaff.html">OUTSTAFF</a>
+              <a class="service-tablet-link" href="service_outsource.html">OUTSOURCE</a>
+            </div>
             <div class="service-header-hover">
               <div class="service-header-hover-wrapper">
-                <a class="service-header-hover-ddt" href="service_ddt.html">
-                  <h4 class="service-header-hover-title">DDT</h4>
-                  <p class="service-header-hover-text">It is time to stop recruiting and start development, scale your team, and tap into the new expertise with ease. </p>
+                <a class="service-header-hover-ddt svg-wrapper" href="service_ddt.html">
+                  <svg class="svg-inner">
+                    <rect class="shape1"/>
+                    <rect class="shape2"/>
+                    <h4 class="service-header-hover-title">DDT</h4>
+                    <p class="service-header-hover-text">It is time to stop recruiting and start development, scale your team, and tap into the new expertise with ease. </p>
+                  </svg>  
                 </a>
-                <a class="service-header-hover-outstaf" href="service_outstaff.html">
-                  <h4 class="service-header-hover-title">OUTSTAFF</h4>
-                  <p class="service-header-hover-text">At Nitrix, we offer remote staff for most computer-based jobs. puter-based jobs. </p>
+                <a class="service-header-hover-outstaf svg-wrapper" href="service_outstaff.html">
+                  <svg class="svg-inner">
+                    <rect class="shape1"/>
+                    <rect class="shape2"/>
+                    <h4 class="service-header-hover-title">OUTSTAFF</h4>
+                    <p class="service-header-hover-text">At Nitrix, we offer remote staff for most computer-based jobs. puter-based jobs. </p>
+                  </svg> 
+                  
                 </a>
-                <a class="service-header-hover-outsource" href="service_outsource.html">
-                  <h4 class="service-header-hover-title">OUTSOURCE</h4>
-                  <p class="service-header-hover-text">Easily collaborate with us in completing your dream team with star players while still retaining overall oversight and control of your employees.</p>
+                <a class="service-header-hover-outsource svg-wrapper" href="service_outsource.html">
+                  <svg class="svg-inner">
+                    <rect class="shape1"/>
+                    <rect class="shape2"/>
+                    <h4 class="service-header-hover-title">OUTSOURCE</h4>
+                    <p class="service-header-hover-text">Easily collaborate with us in completing your dream team with star players while still retaining overall oversight and control of your employees.</p>
+                  </svg> 
+                  
                 </a>
               </div>
             </div>
@@ -219,8 +239,8 @@
             <div class="outsource-faq-content">
               <h3 class="outsource-faq-subtitle ddtitle ddt-nonclass">Why work with a Software Outsourcing company?</h3>
               <div class="ddt-arrow ddt-arrow-black">
-                <span class="ddt-line ddt-line-1"></span>
-                <span class="ddt-line ddt-line-2"></span>
+                <span class="outsource-line outsource-line-1"></span>
+                <span class="outsource-line outsource-line-2"></span>
               </div>
               <div class="ddt-faq-inner faq-closed">
                 <p class="outsource-faq-text">The outsourcing vendor is usually the one who handles all the legal aspects of hiring and maintaining IT programmers. However, you will have to consider the following:</p>
@@ -235,8 +255,8 @@
               <h3 class="outsource-faq-subtitle1 ddtitle1 ddt-nonclass1">What is the difference between outsourcing and outstaffing?</h3>
               
               <div class="ddt-arrow1 ddt-arrow-black">
-                <span class="ddt-line ddt-line-1"></span>
-                <span class="ddt-line ddt-line-2"></span>
+                <span class="outsource-line outsource-line-1"></span>
+                <span class="outsource-line outsource-line-2"></span>
               </div>
               <div class="ddt-faq-inner1 faq-closed1">
                 <p class="outsource-faq-text">The outsourcing vendor is usually the one who handles all the legal aspects of hiring and maintaining IT programmers. However, you will have to consider the following:</p>
@@ -250,8 +270,8 @@
             <div class="outsource-faq-content">
               <h3 class="outsource-faq-subtitle2 outsource-faq-subtitle-2 ddtitle2 ddt-nonclass2">What are the types of software outsourcing?</h3>
               <div class="ddt-arrow2 ddt-arrow-black">
-                <span class="ddt-line ddt-line-1"></span>
-                <span class="ddt-line ddt-line-2"></span>
+                <span class="outsource-line outsource-line-1"></span>
+                <span class="outsource-line outsource-line-2"></span>
               </div>
               <div class="ddt-faq-inner2 faq-closed2">
                 <p class="outsource-faq-text">The outsourcing vendor is usually the one who handles all the legal aspects of hiring and maintaining IT programmers. However, you will have to consider the following:</p>
@@ -265,8 +285,8 @@
             <div class="outsource-faq-content">
               <h3 class="outsource-faq-subtitle3 ddtitle3 ddt-nonclass3">How can I hire outsource team?</h3>
               <div class="ddt-arrow3 ddt-arrow-black">
-                <span class="ddt-line ddt-line-1"></span>
-                <span class="ddt-line ddt-line-2"></span>
+                <span class="outsource-line outsource-line-1"></span>
+                <span class="outsource-line outsource-line-2"></span>
               </div>
               <div class="ddt-faq-inner3 faq-closed3">
                 <p class="outsource-faq-text">The outsourcing vendor is usually the one who handles all the legal aspects of hiring and maintaining IT programmers. However, you will have to consider the following:</p>
@@ -347,11 +367,11 @@
             </a>
             <h3 class="social-title">Get in touch with us:</h3>
             <ul class="social-list">
-              <li class="social-item">LinkedIn</li>
-              <li class="social-item">Instagram</li>
-              <li class="social-item">E-mail</li>
-              <li class="social-item">Skype</li>
-              <li class="social-item">Upwork</li>
+              <li class="social-item"><a class="social-item-hover" href="#">LinkedIn</a></li>
+              <li class="social-item"><a class="social-item-hover" href="#">Instagram</a></li>
+              <li class="social-item"><a class="social-item-hover" href="#">E-mail</a></li>
+              <li class="social-item"><a class="social-item-hover" href="#">Skype</a></li>
+              <li class="social-item"><a class="social-item-hover" href="#">Upwork</a></li>
             </ul>
           </div>
         </div>

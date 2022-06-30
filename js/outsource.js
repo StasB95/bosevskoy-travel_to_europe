@@ -26,6 +26,20 @@ navToggleBurger.addEventListener('click', function() {
   }
 });
 
+let navService = document.querySelector('.service-tablet');
+let navToggleService = document.querySelector('.service-tablet-toggle');
+
+
+navToggleService.addEventListener('click', function() {
+  if (navService.classList.contains('service-tablet-close')) {
+    navService.classList.remove('service-tablet-close');
+    navService.classList.add('service-tablet-open');
+  } else {
+    navService.classList.add('service-tablet-close');
+    navService.classList.remove('service-tablet-open');
+  }
+});
+
 // let ddtTitle = document.querySelector('.ddtitle');
 // let ddtToggleTitle = document.querySelector('.ddt-faq-subtitle');
 
@@ -207,10 +221,10 @@ let ddtToggleArrow = document.querySelector('.outsource-faq-subtitle');
 ddtToggleArrow.addEventListener('click', function() {
   if (ddtArrow.classList.contains('ddt-arrow-black')) {
     ddtArrow.classList.remove('ddt-arrow-black');
-    ddtArrow.classList.add('ddt-arrow-blue');
+    ddtArrow.classList.add('outsource-arrow-blue');
   } else {
     ddtArrow.classList.add('ddt-arrow-black');
-    ddtArrow.classList.remove('ddt-arrow-blue')
+    ddtArrow.classList.remove('outsource-arrow-blue')
   }
 }) 
 
@@ -221,10 +235,10 @@ let ddtToggleArrow1 = document.querySelector('.outsource-faq-subtitle1');
 ddtToggleArrow1.addEventListener('click', function() {
   if (ddtArrow1.classList.contains('ddt-arrow-black')) {
     ddtArrow1.classList.remove('ddt-arrow-black');
-    ddtArrow1.classList.add('ddt-arrow-blue');
+    ddtArrow1.classList.add('outsource-arrow-blue');
   } else {
     ddtArrow1.classList.add('ddt-arrow-black');
-    ddtArrow1.classList.remove('ddt-arrow-blue')
+    ddtArrow1.classList.remove('outsource-arrow-blue')
   }
 }) 
 
@@ -234,10 +248,10 @@ let ddtToggleArrow2 = document.querySelector('.outsource-faq-subtitle2');
 ddtToggleArrow2.addEventListener('click', function() {
   if (ddtArrow2.classList.contains('ddt-arrow-black')) {
     ddtArrow2.classList.remove('ddt-arrow-black');
-    ddtArrow2.classList.add('ddt-arrow-blue');
+    ddtArrow2.classList.add('outsource-arrow-blue');
   } else {
     ddtArrow2.classList.add('ddt-arrow-black');
-    ddtArrow2.classList.remove('ddt-arrow-blue')
+    ddtArrow2.classList.remove('outsource-arrow-blue')
   }
 }) 
 

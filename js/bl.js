@@ -1,14 +1,15 @@
+const items = document.querySelectorAll(".buttons");
 
-let navMain = document.querySelector('.nav__toggle');
-let navToggle = document.querySelector('.nav__toggle');
-
-
-navToggle.addEventListener('click', function() {
-  if (navMain.classList.contains('burger_close')) {
-    navMain.classList.remove('burger_close');
-    navMain.classList.add('burger_active');
-  } else {
-    navMain.classList.add('burger_close');
-    navMain.classList.remove('burger_active');
+function toggleAccordion() {
+  const itemToggle = this.getAttribute('aria-expanded');
+  
+  for (i = 0; i < items.length; i++) {
+    items[i].setAttribute('aria-expanded', 'false');
   }
-});
+  
+  if (itemToggle == 'false') {
+    this.setAttribute('aria-expanded', 'true');
+  }
+}
+
+items.forEach(item => item.addEventListener('click', toggleAccordion));

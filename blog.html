@@ -16,7 +16,7 @@
           </svg>
         </a>
         <a class="nav-img" href="index.html"><img src="../n-s2/img/logo.svg" alt="Nitrix"></a>
-        <a  class="nav-button-contact" href="#contact"><img src="../n-s2/img/container.svg" alt=""></a>
+        <a  href="#contact"><img class="nav-button-contact" src="../n-s2/img/container.svg" alt=""></a>
         <div class="nav__toggle burger_close">
           <span class="burger__line burger__line_second"></span>
           <span class="burger__line burger__line_third"></span>
@@ -28,21 +28,41 @@
           </li>
           <li class="nav-item"><a href="company.html">COMPANY</a></li>
           <li class="nav-item"><a href="portfolio.html">PORTFOLIO</a></li>
-          <li class="nav-item hover-item-service">
-            <a href="service_ddt.html">SERVICES</a>
+          <li class="hover-item-service">
+            <a class="hover-item-service-link" href="service_ddt.html">SERVICES</a>
+            <span class="service-tablet-toggle">SERVICES</span>
+            <div class="service-tablet service-tablet-close">
+              <a class="service-tablet-link" href="service_ddt.html">DDT</a>
+              <a class="service-tablet-link" href="service_outstaff.html">OUTSTAFF</a>
+              <a class="service-tablet-link" href="service_outsource.html">OUTSOURCE</a>
+            </div>
             <div class="service-header-hover">
               <div class="service-header-hover-wrapper">
-                <a class="service-header-hover-ddt" href="service_ddt.html">
-                  <h4 class="service-header-hover-title">DDT</h4>
-                  <p class="service-header-hover-text">It is time to stop recruiting and start development, scale your team, and tap into the new expertise with ease. </p>
+                <a class="service-header-hover-ddt svg-wrapper" href="service_ddt.html">
+                  <svg class="svg-inner">
+                    <rect class="shape1"/>
+                    <rect class="shape2"/>
+                    <h4 class="service-header-hover-title">DDT</h4>
+                    <p class="service-header-hover-text">It is time to stop recruiting and start development, scale your team, and tap into the new expertise with ease. </p>
+                  </svg>  
                 </a>
-                <a class="service-header-hover-outstaf" href="service_outstaff.html">
-                  <h4 class="service-header-hover-title">OUTSTAFF</h4>
-                  <p class="service-header-hover-text">At Nitrix, we offer remote staff for most computer-based jobs. puter-based jobs. </p>
+                <a class="service-header-hover-outstaf svg-wrapper" href="service_outstaff.html">
+                  <svg class="svg-inner">
+                    <rect class="shape1"/>
+                    <rect class="shape2"/>
+                    <h4 class="service-header-hover-title">OUTSTAFF</h4>
+                    <p class="service-header-hover-text">At Nitrix, we offer remote staff for most computer-based jobs. puter-based jobs. </p>
+                  </svg> 
+                  
                 </a>
-                <a class="service-header-hover-outsource" href="service_outsource.html">
-                  <h4 class="service-header-hover-title">OUTSOURCE</h4>
-                  <p class="service-header-hover-text">Easily collaborate with us in completing your dream team with star players while still retaining overall oversight and control of your employees.</p>
+                <a class="service-header-hover-outsource svg-wrapper" href="service_outsource.html">
+                  <svg class="svg-inner">
+                    <rect class="shape1"/>
+                    <rect class="shape2"/>
+                    <h4 class="service-header-hover-title">OUTSOURCE</h4>
+                    <p class="service-header-hover-text">Easily collaborate with us in completing your dream team with star players while still retaining overall oversight and control of your employees.</p>
+                  </svg> 
+                  
                 </a>
               </div>
             </div>
@@ -73,6 +93,30 @@
             <li class="blog-categories-item">design</li>
             <li class="blog-categories-item">Nitrix</li>
           </ul>
+          <div class="dropdown">
+            <button class="dropdown__button">all</button>
+            <ul class="dropdown__list">
+                <li class="dropdown__list-item" data-value="travel">All</li>
+                <li class="dropdown__list-item" data-value="lessons">latest</li>
+                <li class="dropdown__list-item" data-value="photo">business</li>
+                <li class="dropdown__list-item" data-value="sport">Mobile</li>
+                <li class="dropdown__list-item" data-value="travel">technologies</li>
+                <li class="dropdown__list-item" data-value="travel">design</li>
+                <li class="dropdown__list-item" data-value="travel">Nitrix</li>
+            </ul>
+            <input type="text" name="select-category" value="" class="dropdown__input-hidden" >
+          </div>
+          <!-- <div class="blog-categories-list-mobile">
+            <select class="blog-categories-list-mobile-select" name="categories">
+              <option class="blog-categories-list-mobile-item" value="categories1" selected>all</option>
+              <option class="blog-categories-list-mobile-item" value="categories2">latest</option>
+              <option class="blog-categories-list-mobile-item" value="categories3">business</option>
+              <option class="blog-categories-list-mobile-item" value="categories6">Mobile</option>
+              <option class="blog-categories-list-mobile-item" value="categories4">technologies</option>
+              <option class="blog-categories-list-mobile-item" value="categories5">design</option>
+              <option class="blog-categories-list-mobile-item" value="categories7">Nitrix</option>
+            </select>
+          </div> -->
           <div class="blog-categories-search">
             <svg width="23" height="23" viewBox="0 0 23 23" fill="none">
               <path d="M22.6222 20.8083L18.2791 16.478C19.6804 14.6928 20.4407 12.4884 20.4379 10.2189C20.4379 8.19782 19.8385 6.22209 18.7157 4.5416C17.5928 2.86111 15.9968 1.55132 14.1295 0.777874C12.2623 0.00442767 10.2076 -0.197941 8.22532 0.196358C6.24304 0.590658 4.4222 1.56392 2.99306 2.99306C1.56392 4.4222 0.590658 6.24304 0.196358 8.22532C-0.197941 10.2076 0.00442767 12.2623 0.777874 14.1295C1.55132 15.9968 2.86111 17.5928 4.5416 18.7157C6.22209 19.8385 8.19782 20.4379 10.2189 20.4379C12.4884 20.4407 14.6928 19.6804 16.478 18.2791L20.8083 22.6222C20.927 22.7419 21.0683 22.8369 21.224 22.9018C21.3796 22.9666 21.5466 23 21.7152 23C21.8839 23 22.0508 22.9666 22.2065 22.9018C22.3621 22.8369 22.5034 22.7419 22.6222 22.6222C22.7419 22.5034 22.8369 22.3621 22.9018 22.2065C22.9666 22.0508 23 21.8839 23 21.7152C23 21.5466 22.9666 21.3796 22.9018 21.224C22.8369 21.0683 22.7419 20.927 22.6222 20.8083ZM2.55474 10.2189C2.55474 8.7031 3.00423 7.2213 3.84639 5.96093C4.68854 4.70056 5.88552 3.71822 7.28597 3.13814C8.68642 2.55805 10.2274 2.40628 11.7141 2.702C13.2009 2.99773 14.5665 3.72767 15.6383 4.79953C16.7102 5.87139 17.4401 7.23701 17.7359 8.72372C18.0316 10.2104 17.8798 11.7514 17.2997 13.1519C16.7196 14.5523 15.7373 15.7493 14.4769 16.5915C13.2166 17.4336 11.7348 17.8831 10.2189 17.8831C8.18626 17.8831 6.23684 17.0757 4.79953 15.6383C3.36221 14.201 2.55474 12.2516 2.55474 10.2189Z" fill="#A0A0A0"/>
@@ -81,82 +125,70 @@
         </div>
         <div class="blog-wrapper">
           <h2 class="blog-categories-subtitle">Popular</h2>
-          <div class="blog-popular">
+          <div class="blog-popular"  id="horizontal-scroller">
             <div class="blog-popular-card">
               <p class="blog-popular-card-date">April 23, 2022 | 4 min read</p>
-              <img src="../n-s2/img/blog/blog-popular-card-img1.png" alt="" class="blog-popular-card-img">
+              <div class="blog-popular-card-img-wrapper"><img src="../n-s2/img/blog/blog-popular-card-img1.png" alt="" class="blog-popular-card-img"></div>
               <h5 class="blog-popular-card-categories">mobile</h5>
-              <h3 class="blog-popular-card-title">Best App Ideas for Your Business Success in 2022</h3>
+              <h3 class="blog-popular-card-title blog-popular-card-title-hover">Best App Ideas for Your Business Success in 2022</h3>
             </div>
             <div class="blog-popular-card">
               <p class="blog-popular-card-date">April 23, 2022 | 4 min read</p>
-              <img src="../n-s2/img/blog/blog-popular-card-img1.png" alt="" class="blog-popular-card-img">
+              <div class="blog-popular-card-img-wrapper"><img src="../n-s2/img/blog/blog-popular-card-img1.png" alt="" class="blog-popular-card-img"></div>
               <p class="blog-popular-card-categories">mobile</p>
-              <h3 class="blog-popular-card-title">Best App Ideas for Your Business Success in 2022</h3>
+              <h3 class="blog-popular-card-title  blog-popular-card-title-hover">Best App Ideas for Your Business Success in 2022</h3>
             </div>
             <div class="blog-popular-card">
               <p class="blog-popular-card-date">April 23, 2022 | 4 min read</p>
-              <img src="../n-s2/img/blog/blog-popular-card-img1.png" alt="" class="blog-popular-card-img">
+              <div class="blog-popular-card-img-wrapper"><img src="../n-s2/img/blog/blog-popular-card-img1.png" alt="" class="blog-popular-card-img"></div>
               <p class="blog-popular-card-categories">mobile</p>
-              <h3 class="blog-popular-card-title">Best App Ideas for Your Business Success in 2022</h3>
-            </div>
-            <div class="blog-popular-card">
-              <p class="blog-popular-card-date">April 23, 2022 | 4 min read</p>
-              <img src="../n-s2/img/blog/blog-popular-card-img1.png" alt="" class="blog-popular-card-img">
-              <p class="blog-popular-card-categories">mobile</p>
-              <h3 class="blog-popular-card-title">Best App Ideas for Your Business Success in 2022</h3>
-            </div>
-            <div class="blog-popular-card">
-              <p class="blog-popular-card-date">April 23, 2022 | 4 min read</p>
-              <img src="../n-s2/img/blog/blog-popular-card-img1.png" alt="" class="blog-popular-card-img">
-              <p class="blog-popular-card-categories">mobile</p>
-              <h3 class="blog-popular-card-title">Best App Ideas for Your Business Success in 2022</h3>
+              <h3 class="blog-popular-card-title  blog-popular-card-title-hover">Best App Ideas for Your Business Success in 2022</h3>
             </div>
           </div>
         </div>
         <div>
           <div class="blog-news-card">
-            <img src="../n-s2/img/blog/blog-news-card-img1.png" alt="" class="blog-news-card-img">
+            <div class="blog-news-card-img-wrapper"><img src="../n-s2/img/blog/blog-news-card-img1.png" alt="" class="blog-news-card-img"></div>
             <div class="blog-news-card-inner">
               <p class="blog-news-card-date">March 08, 2022 | 5 min read</p>
               <p class="blog-news-card-categories">technology</p>
-              <h3 class="blog-news-card-title">Things to consider when building digital banking software</h3>
+              <h3 class="blog-news-card-title  blog-popular-card-title-hover">Things to consider when building digital banking software</h3>
               <p class="blog-news-card-text">Learn what types of software architecture you can consider for digital banking, how to make your software secure, and how to choose suitable technologies based on your needs.</p>
             </div>
           </div>
           <div class="blog-news-card">
-            <img src="../n-s2/img/blog/blog-news-card-img1.png" alt="" class="blog-news-card-img">
+            <div class="blog-news-card-img-wrapper"><img src="../n-s2/img/blog/blog-news-card-img1.png" alt="" class="blog-news-card-img"></div>
             <div class="blog-news-card-inner">
               <p class="blog-news-card-date">March 08, 2022 | 5 min read</p>
               <p class="blog-news-card-categories">technology</p>
-              <h3 class="blog-news-card-title">Things to consider when building digital banking software</h3>
+              <h3 class="blog-news-card-title  blog-popular-card-title-hover">Things to consider when building digital banking software</h3>
               <p class="blog-news-card-text">Learn what types of software architecture you can consider for digital banking, how to make your software secure, and how to choose suitable technologies based on your needs.</p>
             </div>
           </div>
           <div class="blog-news-card">
-            <img src="../n-s2/img/blog/blog-news-card-img1.png" alt="" class="blog-news-card-img">
+            <div class="blog-news-card-img-wrapper"><img src="../n-s2/img/blog/blog-news-card-img1.png" alt="" class="blog-news-card-img"></div>
             <div class="blog-news-card-inner">
               <p class="blog-news-card-date">March 08, 2022 | 5 min read</p>
               <p class="blog-news-card-categories">technology</p>
-              <h3 class="blog-news-card-title">Things to consider when building digital banking software</h3>
+              <h3 class="blog-news-card-title  blog-popular-card-title-hover">Things to consider when building digital banking software</h3>
               <p class="blog-news-card-text">Learn what types of software architecture you can consider for digital banking, how to make your software secure, and how to choose suitable technologies based on your needs.</p>
             </div>
           </div>
           <div class="blog-news-card">
-            <img src="../n-s2/img/blog/blog-news-card-img1.png" alt="" class="blog-news-card-img">
+            <div class="blog-news-card-img-wrapper"><img src="../n-s2/img/blog/blog-news-card-img1.png" alt="" class="blog-news-card-img"></div>
             <div class="blog-news-card-inner">
               <p class="blog-news-card-date">March 08, 2022 | 5 min read</p>
               <p class="blog-news-card-categories">technology</p>
-              <h3 class="blog-news-card-title">Things to consider when building digital banking software</h3>
+              <h3 class="blog-news-card-title  blog-popular-card-title-hover">Things to consider when building digital banking software</h3>
               <p class="blog-news-card-text">Learn what types of software architecture you can consider for digital banking, how to make your software secure, and how to choose suitable technologies based on your needs.</p>
             </div>
           </div>
           <div class="blog-news-card">
-            <img src="../n-s2/img/blog/blog-news-card-img1.png" alt="" class="blog-news-card-img">
+            <div class="blog-news-card-img-wrapper"><img src="../n-s2/img/blog/blog-news-card-img1.png" alt="" class="blog-news-card-img"></div>
             <div class="blog-news-card-inner">
               <p class="blog-news-card-date">March 08, 2022 | 5 min read</p>
               <p class="blog-news-card-categories">technology</p>
-              <h3 class="blog-news-card-title">Things to consider when building digital banking software</h3>
+              <h3 class="blog-news-card-title  blog-popular-card-title-hover">Things to consider when building digital banking software</h3>
               <p class="blog-news-card-text">Learn what types of software architecture you can consider for digital banking, how to make your software secure, and how to choose suitable technologies based on your needs.</p>
             </div>
           </div>
@@ -214,11 +246,11 @@
             </a>
             <h3 class="social-title">Get in touch with us:</h3>
             <ul class="social-list">
-              <li class="social-item">LinkedIn</li>
-              <li class="social-item">Instagram</li>
-              <li class="social-item">E-mail</li>
-              <li class="social-item">Skype</li>
-              <li class="social-item">Upwork</li>
+              <li class="social-item"><a class="social-item-hover" href="#">LinkedIn</a></li>
+              <li class="social-item"><a class="social-item-hover" href="#">Instagram</a></li>
+              <li class="social-item"><a class="social-item-hover" href="#">E-mail</a></li>
+              <li class="social-item"><a class="social-item-hover" href="#">Skype</a></li>
+              <li class="social-item"><a class="social-item-hover" href="#">Upwork</a></li>
             </ul>
           </div>
         </div>
@@ -235,5 +267,6 @@
       </div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="js/blog-dropdown.js"></script>
   </body>
 </html>

@@ -27,6 +27,21 @@ navToggleBurger.addEventListener('click', function() {
 });
 
 
+let navService = document.querySelector('.service-tablet');
+let navToggleService = document.querySelector('.service-tablet-toggle');
+
+
+navToggleService.addEventListener('click', function() {
+  if (navService.classList.contains('service-tablet-close')) {
+    navService.classList.remove('service-tablet-close');
+    navService.classList.add('service-tablet-open');
+  } else {
+    navService.classList.add('service-tablet-close');
+    navService.classList.remove('service-tablet-open');
+  }
+});
+
+
 // let ddtTitle = document.querySelector('.ddtitle');
 // let ddtToggleTitle = document.querySelector('.ddt-faq-subtitle');
 
@@ -82,19 +97,19 @@ navToggleBurger.addEventListener('click', function() {
 
 
 
-let ddtList = document.querySelector('.ddt-faq-inner');
-let ddtToggle = document.querySelector('.ddt-faq-subtitle');
+// let ddtList = document.querySelector('.ddt-faq-inner');
+// let ddtToggle = document.querySelector('.ddt-faq-subtitle');
 
 
-ddtToggle.addEventListener('click', function() {
-  if (ddtList.classList.contains('faq-closed')) {
-    ddtList.classList.remove('faq-closed');
-    ddtList.classList.add('faq-opened');
-  } else {
-    ddtList.classList.add('faq-closed');
-    ddtList.classList.remove('faq-opened');
-  }
-});
+// ddtToggle.addEventListener('click', function() {
+//   if (ddtList.classList.contains('faq-closed')) {
+//     ddtList.classList.remove('faq-closed');
+//     ddtList.classList.add('faq-opened');
+//   } else {
+//     ddtList.classList.add('faq-closed');
+//     ddtList.classList.remove('faq-opened');
+//   }
+// });
 
 let ddtListOne = document.querySelector('.ddt-faq-inner1');
 let ddtToggleOne = document.querySelector('.ddt-faq-subtitle1');
@@ -124,18 +139,18 @@ ddtToggleTwo.addEventListener('click', function() {
   }
 });
 
-let ddtListThree = document.querySelector('.ddt-faq-inner3');
-let ddtToggleThree = document.querySelector('.ddt-faq-subtitle3');
+// let ddtListThree = document.querySelector('.ddt-faq-inner3');
+// let ddtToggleThree = document.querySelector('.ddt-faq-subtitle3');
 
 
-ddtToggleThree.addEventListener('click', function() {
-  if (ddtListThree.classList.contains('faq-closed3')) {
-    ddtListThree.classList.remove('faq-closed3');
-    ddtListThree.classList.add('faq-opened3');
-  } else {
-    ddtListThree.classList.add('faq-closed3');
-    ddtListThree.classList.remove('faq-opened3');
-  }
-});
+// ddtToggleThree.addEventListener('click', function() {
+//   if (ddtListThree.classList.contains('faq-closed3')) {
+//     ddtListThree.classList.remove('faq-closed3');
+//     ddtListThree.classList.add('faq-opened3');
+//   } else {
+//     ddtListThree.classList.add('faq-closed3');
+//     ddtListThree.classList.remove('faq-opened3');
+//   }
+// });
 
 

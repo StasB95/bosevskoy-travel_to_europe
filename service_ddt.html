@@ -9,14 +9,14 @@
   <body class="page">
     <header class="page-header">
       <nav class="nav " id="arrow-up">
-        <a href="#arrow-down" class="header-arrow header-arrow-service">
+        <a href="#arrow-down" class="header-arrow-service">
           <span>Scroll</span>
           <svg  class="header-arrow-svg" width="6" height="40" fill="none">
             <path d="M3 0L0.113249 5H5.88675L3 0ZM2.5 4.5L2.5 40H3.5L3.5 4.5H2.5Z" fill="#303030"/>
           </svg>
         </a>
         <a class="nav-img" href="index.html"><img src="../n-s2/img/logo.svg" alt="Nitrix"></a>
-        <a  class="nav-button-contact" href="#contact"><img src="../n-s2/img/container.svg" alt=""></a>
+        <a  href="#contact"><img class="nav-button-contact" src="../n-s2/img/container.svg" alt=""></a>
         <div class="nav__toggle burger_close">
           <span class="burger__line burger__line_second"></span>
           <span class="burger__line burger__line_third"></span>
@@ -28,21 +28,41 @@
           </li>
           <li class="nav-item"><a href="company.html">COMPANY</a></li>
           <li class="nav-item"><a href="portfolio.html">PORTFOLIO</a></li>
-          <li class="nav-item  hover-item-service">
-            <a class=" nav-active" href="service_ddt.html">SERVICES</a>
+          <li class="hover-item-service">
+            <a class="nav-active hover-item-service-link" href="service_ddt.html">SERVICES</a>
+            <span class="service-tablet-toggle">SERVICES</span>
+            <div class="service-tablet service-tablet-close">
+              <a class="service-tablet-link" href="service_ddt.html">DDT</a>
+              <a class="service-tablet-link" href="service_outstaff.html">OUTSTAFF</a>
+              <a class="service-tablet-link" href="service_outsource.html">OUTSOURCE</a>
+            </div>
             <div class="service-header-hover">
               <div class="service-header-hover-wrapper">
-                <a class="service-header-hover-ddt" href="service_ddt.html">
-                  <h4 class="service-header-hover-title">DDT</h4>
-                  <p class="service-header-hover-text">It is time to stop recruiting and start development, scale your team, and tap into the new expertise with ease. </p>
+                <a class="service-header-hover-ddt svg-wrapper" href="service_ddt.html">
+                  <svg class="svg-inner">
+                    <rect class="shape1"/>
+                    <rect class="shape2"/>
+                    <h4 class="service-header-hover-title">DDT</h4>
+                    <p class="service-header-hover-text">It is time to stop recruiting and start development, scale your team, and tap into the new expertise with ease. </p>
+                  </svg>  
                 </a>
-                <a class="service-header-hover-outstaf" href="service_outstaff.html">
-                  <h4 class="service-header-hover-title">OUTSTAFF</h4>
-                  <p class="service-header-hover-text">At Nitrix, we offer remote staff for most computer-based jobs. puter-based jobs. </p>
+                <a class="service-header-hover-outstaf svg-wrapper" href="service_outstaff.html">
+                  <svg class="svg-inner">
+                    <rect class="shape1"/>
+                    <rect class="shape2"/>
+                    <h4 class="service-header-hover-title">OUTSTAFF</h4>
+                    <p class="service-header-hover-text">At Nitrix, we offer remote staff for most computer-based jobs. puter-based jobs. </p>
+                  </svg> 
+                  
                 </a>
-                <a class="service-header-hover-outsource" href="service_outsource.html">
-                  <h4 class="service-header-hover-title">OUTSOURCE</h4>
-                  <p class="service-header-hover-text">Easily collaborate with us in completing your dream team with star players while still retaining overall oversight and control of your employees.</p>
+                <a class="service-header-hover-outsource svg-wrapper" href="service_outsource.html">
+                  <svg class="svg-inner">
+                    <rect class="shape1"/>
+                    <rect class="shape2"/>
+                    <h4 class="service-header-hover-title">OUTSOURCE</h4>
+                    <p class="service-header-hover-text">Easily collaborate with us in completing your dream team with star players while still retaining overall oversight and control of your employees.</p>
+                  </svg> 
+                  
                 </a>
               </div>
             </div>
@@ -61,14 +81,14 @@
       <section>
         <h3 class="ddt-subtitle">Dedicated Development Team</h3>
         <h1 class="ddt-title">Hire DDT<br>for Any Business Goals</h1>
-        <img class="ddt-img" src="../n-s2/img/ddt.png" alt="">
-        <!-- <div class="ddt-img-wrapper">
+        <!-- <img class="ddt-img" src="../n-s2/img/ddt.png" alt=""> -->
+        <div class="ddt-img-wrapper">
           <div class="night"></div>
           <div class="day"></div>
-          <div class="ddt-spotlight"></div>
-          <img class="ddt-img" src="../n-s2/img/ddt.png" alt="">
-        </div> -->
-        <div class="ddt-information">
+          <!-- <div class="ddt-spotlight"></div>
+          <img class="ddt-img" src="../n-s2/img/ddt.png" alt=""> -->
+        </div>
+        <div class="ddt-information"  id="arrow-down">
          <div class="ddt-information-wrapper">
             <!-- <div class="ddt-information-link">
               <a class="ddt-information-link1" href="service_outsource.html">
@@ -92,7 +112,7 @@
          </div>
         </div>
       </section>
-      <section id="arrow-down">
+      <section>
         <div class="ddt-value">
           <h2 class="ddt-value-title">How we differ</h2>
           <div class="ddt-value-wrapper">
@@ -223,48 +243,53 @@
           <div class="ddt-faq-wrapper">
             <h2 class="ddt-faq-title">FAQ</h2>
             <div class="ddt-faq-content">
-              <h3 class="ddt-faq-subtitle ddtitle ddt-nonclass">What is the best place to hire dedicated software development team for my projects?</h3>
-              
               <div class="ddt-arrow ddt-arrow-black">
                 <span class="ddt-line ddt-line-1"></span>
                 <span class="ddt-line ddt-line-2"></span>
               </div>
-              <div class="ddt-faq-inner faq-closed">
+              <button class="buttons ddtitle ddt-nonclass" id="accordion-button-1" aria-expanded="false"  aria-hidden="true"><span class="accordion-title ">What is the best place to hire dedicated software development team for my projects?</span></button>
+              <!-- <h3 class="ddt-faq-subtitle ddtitle ddt-nonclass">What is the best place to hire dedicated software development team for my projects?</h3> -->
+              
+              <div class="accordion-content">
                 <p class="ddt-faq-text">The outsourcing vendor is usually the one who handles all the legal aspects of hiring and maintaining IT programmers. However, you will have to consider the following:</p>
                 <ul class="ddt-faq-list">
                   <li class="ddt-faq-item"><span class="ddt-faq-item-bold">Non-Disclosure Agreement (NDA).</span> The document has to state what information is considered confidential, that a person can use the disclosed information for the project purposes only, and what the penalty is.</li>
                   <li class="ddt-faq-item"><span class="ddt-faq-item-bold">Statement of Work (SOW).</span> This document should specify the scope of work, the deliverables, the schedule, the acceptance criteria, the duration, the standards, and any other terms, conditions, or special requirements for the future project.</li>
-                  <li class="ddt-faq-item"><span class="ddt-faq-item-bold">Master Services Agreement (MSA).</span> This document defines your cooperation with the vendor. It is the place where you want to specify the terms of payment, dispute resolution, and intellectual property rights.</li>
+                  <li class="ddt-faq-item ddt-faq-item-last" ><span class="ddt-faq-item-bold">Master Services Agreement (MSA).</span> This document defines your cooperation with the vendor. It is the place where you want to specify the terms of payment, dispute resolution, and intellectual property rights.</li>
                 </ul>
               </div>
             </div>
             <div class="ddt-faq-content">
-              <h3 class="ddt-faq-subtitle1  ddtitle1 ddt-nonclass1">What is the best place to hire dedicated software development team for my projects?</h3>
               <div class="ddt-arrow1 ddt-arrow-black">
                 <span class="ddt-line ddt-line-1"></span>
                 <span class="ddt-line ddt-line-2"></span>
               </div>
-              <div class="ddt-faq-inner1 faq-closed1">
+              <button class="buttons buttons1 ddtitle1 ddt-nonclass1" id="accordion-button-1" aria-expanded="false"  aria-hidden="true"><span class="accordion-title ">What is the best place to hire dedicated software development team for my projects?</span></button>
+              <!-- <h3 class="ddt-faq-subtitle1  ddtitle1 ddt-nonclass1">What is the best place to hire dedicated software development team for my projects?</h3> -->
+              
+              <div class="accordion-content">
                 <p class="ddt-faq-text">The outsourcing vendor is usually the one who handles all the legal aspects of hiring and maintaining IT programmers. However, you will have to consider the following:</p>
                 <ul class="ddt-faq-list">
                   <li class="ddt-faq-item"><span class="ddt-faq-item-bold">Non-Disclosure Agreement (NDA).</span> The document has to state what information is considered confidential, that a person can use the disclosed information for the project purposes only, and what the penalty is.</li>
                   <li class="ddt-faq-item"><span class="ddt-faq-item-bold">Statement of Work (SOW).</span> This document should specify the scope of work, the deliverables, the schedule, the acceptance criteria, the duration, the standards, and any other terms, conditions, or special requirements for the future project.</li>
-                  <li class="ddt-faq-item"><span class="ddt-faq-item-bold">Master Services Agreement (MSA).</span> This document defines your cooperation with the vendor. It is the place where you want to specify the terms of payment, dispute resolution, and intellectual property rights.</li>
+                  <li class="ddt-faq-item ddt-faq-item-last"><span class="ddt-faq-item-bold">Master Services Agreement (MSA).</span> This document defines your cooperation with the vendor. It is the place where you want to specify the terms of payment, dispute resolution, and intellectual property rights.</li>
                 </ul>
               </div>
             </div>
             <div class="ddt-faq-content">
-              <h3 class="ddt-faq-subtitle2  ddtitle2 ddt-nonclass2">What are the legal aspects of hiring a dedicated team? What about intellectual property rights?</h3>
               <div class="ddt-arrow2 ddt-arrow-black">
                 <span class="ddt-line ddt-line-1"></span>
                 <span class="ddt-line ddt-line-2"></span>
               </div>
-              <div class="ddt-faq-inner2 faq-closed2  ddt-faq-item-last">
+              <button class="buttons buttons2 ddtitle2 ddt-nonclass2" id="accordion-button-1" aria-expanded="false"  aria-hidden="true"><span class="accordion-title ">What are the legal aspects of hiring a dedicated team? What about intellectual property rights?</span></button>
+              <!-- <h3 class="ddt-faq-subtitle2  ddtitle2 ddt-nonclass2">What are the legal aspects of hiring a dedicated team? What about intellectual property rights?</h3> -->
+
+              <div class="accordion-content">
                 <p class="ddt-faq-text">The outsourcing vendor is usually the one who handles all the legal aspects of hiring and maintaining IT programmers. However, you will have to consider the following:</p>
                 <ul class="ddt-faq-list">
                   <li class="ddt-faq-item"><span class="ddt-faq-item-bold">Non-Disclosure Agreement (NDA).</span> The document has to state what information is considered confidential, that a person can use the disclosed information for the project purposes only, and what the penalty is.</li>
                   <li class="ddt-faq-item"><span class="ddt-faq-item-bold">Statement of Work (SOW).</span> This document should specify the scope of work, the deliverables, the schedule, the acceptance criteria, the duration, the standards, and any other terms, conditions, or special requirements for the future project.</li>
-                  <li class="ddt-faq-item"><span class="ddt-faq-item-bold">Master Services Agreement (MSA).</span> This document defines your cooperation with the vendor. It is the place where you want to specify the terms of payment, dispute resolution, and intellectual property rights.</li>
+                  <li class="ddt-faq-item ddt-faq-item-last"><span class="ddt-faq-item-bold">Master Services Agreement (MSA).</span> This document defines your cooperation with the vendor. It is the place where you want to specify the terms of payment, dispute resolution, and intellectual property rights.</li>
                 </ul>
               </div>
             </div>
@@ -341,11 +366,11 @@
             </a>
             <h3 class="social-title">Get in touch with us:</h3>
             <ul class="social-list">
-              <li class="social-item">LinkedIn</li>
-              <li class="social-item">Instagram</li>
-              <li class="social-item">E-mail</li>
-              <li class="social-item">Skype</li>
-              <li class="social-item">Upwork</li>
+              <li class="social-item"><a class="social-item-hover" href="#">LinkedIn</a></li>
+              <li class="social-item"><a class="social-item-hover" href="#">Instagram</a></li>
+              <li class="social-item"><a class="social-item-hover" href="#">E-mail</a></li>
+              <li class="social-item"><a class="social-item-hover" href="#">Skype</a></li>
+              <li class="social-item"><a class="social-item-hover" href="#">Upwork</a></li>
             </ul>
           </div>
         </div>
@@ -361,8 +386,8 @@
         </div>
       </div>
     </footer>
-
-    <script src="js/main.js"></script>
     <script src="js/service.js"></script>
+    <script src="js/main.js"></script>
+
   </body>
 </html>

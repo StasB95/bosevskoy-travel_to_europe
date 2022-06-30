@@ -12,6 +12,20 @@ navToggle.addEventListener('click', function() {
   }
 });
 
+let navService = document.querySelector('.service-tablet');
+let navToggleService = document.querySelector('.service-tablet-toggle');
+
+
+navToggleService.addEventListener('click', function() {
+  if (navService.classList.contains('service-tablet-close')) {
+    navService.classList.remove('service-tablet-close');
+    navService.classList.add('service-tablet-open');
+  } else {
+    navService.classList.add('service-tablet-close');
+    navService.classList.remove('service-tablet-open');
+  }
+});
+
 
 // let ddtTitle = document.querySelector('.ddtitle');
 // let ddtToggleTitle = document.querySelector('.ddt-faq-subtitle');
@@ -175,10 +189,10 @@ let ddtToggleArrow1 = document.querySelector('.outstaff-faq-subtitle1');
 ddtToggleArrow1.addEventListener('click', function() {
   if (ddtArrow1.classList.contains('ddt-arrow-black')) {
     ddtArrow1.classList.remove('ddt-arrow-black');
-    ddtArrow1.classList.add('ddt-arrow-blue');
+    ddtArrow1.classList.add('outstaff-arrow-blue');
   } else {
     ddtArrow1.classList.add('ddt-arrow-black');
-    ddtArrow1.classList.remove('ddt-arrow-blue')
+    ddtArrow1.classList.remove('outstaff-arrow-blue')
   }
 }) 
 
@@ -188,10 +202,10 @@ let ddtToggleArrow2 = document.querySelector('.outstaff-faq-subtitle2');
 ddtToggleArrow2.addEventListener('click', function() {
   if (ddtArrow2.classList.contains('ddt-arrow-black')) {
     ddtArrow2.classList.remove('ddt-arrow-black');
-    ddtArrow2.classList.add('ddt-arrow-blue');
+    ddtArrow2.classList.add('outstaff-arrow-blue');
   } else {
     ddtArrow2.classList.add('ddt-arrow-black');
-    ddtArrow2.classList.remove('ddt-arrow-blue')
+    ddtArrow2.classList.remove('outstaff-arrow-blue')
   }
 }) 
 
@@ -201,9 +215,9 @@ let ddtToggleArrow3 = document.querySelector('.outstaff-faq-subtitle3');
 ddtToggleArrow3.addEventListener('click', function() {
   if (ddtArrow3.classList.contains('ddt-arrow-black')) {
     ddtArrow3.classList.remove('ddt-arrow-black');
-    ddtArrow3.classList.add('ddt-arrow-blue');
+    ddtArrow3.classList.add('outstaff-arrow-blue');
   } else {
     ddtArrow3.classList.add('ddt-arrow-black');
-    ddtArrow3.classList.remove('ddt-arrow-blue')
+    ddtArrow3.classList.remove('outstaff-arrow-blue')
   }
 }) 
