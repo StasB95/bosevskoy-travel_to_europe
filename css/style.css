@@ -128,8 +128,8 @@ html {
 .header-arrow:hover {
   -webkit-animation-name: header-arrow;
           animation-name: header-arrow;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-iteration-count: 1;
@@ -141,30 +141,38 @@ html {
 }
 @-webkit-keyframes header-arrow {
   0% {
-    bottom: -395px;
+    width: 80px;
   }
   25% {
-    bottom: -410px;
+    width: 95px;
+    right: -111.5px;
+    bottom: -403px;
   }
   75% {
-    bottom: -410px;
+    width: 95px;
+    bottom: -403px;
+    right: -111.5px;
   }
   100% {
-    bottom: -395px;
+    width: 80px;
   }
 }
 @keyframes header-arrow {
   0% {
-    bottom: -395px;
+    width: 80px;
   }
   25% {
-    bottom: -410px;
+    width: 95px;
+    right: -111.5px;
+    bottom: -403px;
   }
   75% {
-    bottom: -410px;
+    width: 95px;
+    bottom: -403px;
+    right: -111.5px;
   }
   100% {
-    bottom: -395px;
+    width: 80px;
   }
 }
 @media (max-width: 1919px) {
@@ -179,8 +187,8 @@ html {
   .header-arrow:hover {
     -webkit-animation-name: header-arrow-desc;
             animation-name: header-arrow-desc;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
+    -webkit-animation-duration: 0.73s;
+            animation-duration: 0.73s;
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
     -webkit-animation-iteration-count: 1;
@@ -192,30 +200,38 @@ html {
   }
   @-webkit-keyframes header-arrow-desc {
     0% {
-      bottom: -320px;
+      width: 70px;
     }
     25% {
-      bottom: -335px;
+      width: 85px;
+      right: -82.5px;
+      bottom: -328px;
     }
     75% {
-      bottom: -335px;
+      width: 85px;
+      bottom: -328px;
+      right: -82.5px;
     }
     100% {
-      bottom: -320px;
+      width: 70px;
     }
   }
   @keyframes header-arrow-desc {
     0% {
-      bottom: -320px;
+      width: 70px;
     }
     25% {
-      bottom: -335px;
+      width: 85px;
+      right: -82.5px;
+      bottom: -328px;
     }
     75% {
-      bottom: -335px;
+      width: 85px;
+      bottom: -328px;
+      right: -82.5px;
     }
     100% {
-      bottom: -320px;
+      width: 70px;
     }
   }
 }
@@ -340,6 +356,16 @@ html {
 }
 @media (max-width: 1919px) {
   .nav-button-contact {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    margin: 0;
+  }
+  .nav-button-contact:hover {
+    width: 55px;
+    height: 55px;
+    top: 22px;
+    right: -3px;
     margin: 0;
   }
 }
@@ -908,6 +934,7 @@ html {
   }
 }
 .service-header-hover-text {
+  width: 386px;
   position: absolute;
   top: 48px;
   left: 15px;
@@ -920,6 +947,7 @@ html {
 }
 @media (max-width: 1919px) {
   .service-header-hover-text {
+    width: 306px;
     font-size: 16px;
     line-height: 140%;
   }
@@ -946,7 +974,7 @@ html {
   fill: transparent;
   stroke: #28C0E2;
   transition-timing-function: linear;
-  transition: stroke-dashoffset 4s, stroke-dasharray 4s;
+  transition: stroke-dashoffset 0.5s, stroke-dasharray 2s;
 }
 @media (max-width: 1919px) {
   .shape1,
@@ -2121,8 +2149,8 @@ html {
 .header-arrow-company:hover {
   -webkit-animation-name: header-arrow-comp;
           animation-name: header-arrow-comp;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-iteration-count: 1;
@@ -2134,30 +2162,38 @@ html {
 }
 @-webkit-keyframes header-arrow-comp {
   0% {
-    bottom: -205px;
+    width: 80px;
   }
   25% {
-    bottom: -220px;
+    width: 90px;
+    right: -109px;
+    bottom: -210px;
   }
   75% {
-    bottom: -220px;
+    width: 90px;
+    right: -109px;
+    bottom: -210px;
   }
   100% {
-    bottom: -205px;
+    width: 80px;
   }
 }
 @keyframes header-arrow-comp {
   0% {
-    bottom: -205px;
+    width: 80px;
   }
   25% {
-    bottom: -220px;
+    width: 90px;
+    right: -109px;
+    bottom: -210px;
   }
   75% {
-    bottom: -220px;
+    width: 90px;
+    right: -109px;
+    bottom: -210px;
   }
   100% {
-    bottom: -205px;
+    width: 80px;
   }
 }
 @media (max-width: 1919px) {
@@ -2167,10 +2203,10 @@ html {
     bottom: -151px;
   }
   .header-arrow-company:hover {
-    -webkit-animation-name: header-arrow-comp;
-            animation-name: header-arrow-comp;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
+    -webkit-animation-name: header-arrow-comp-desc;
+            animation-name: header-arrow-comp-desc;
+    -webkit-animation-duration: 0.75s;
+            animation-duration: 0.75s;
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
     -webkit-animation-iteration-count: 1;
@@ -2180,33 +2216,46 @@ html {
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  @-webkit-keyframes header-arrow-comp {
+  @-webkit-keyframes header-arrow-comp-desc {
     0% {
-      bottom: -151px;
+      width: 80px;
     }
     25% {
-      bottom: -165px;
+      width: 90px;
+      right: -109px;
+      bottom: -156px;
     }
     75% {
-      bottom: -165px;
+      width: 90px;
+      right: -109px;
+      bottom: -156px;
     }
     100% {
-      bottom: -151px;
+      width: 80px;
     }
   }
-  @keyframes header-arrow-comp {
+  @keyframes header-arrow-comp-desc {
     0% {
-      bottom: -151px;
+      width: 80px;
     }
     25% {
-      bottom: -165px;
+      width: 90px;
+      right: -109px;
+      bottom: -156px;
     }
     75% {
-      bottom: -165px;
+      width: 90px;
+      right: -109px;
+      bottom: -156px;
     }
     100% {
-      bottom: -151px;
+      width: 80px;
     }
+  }
+}
+@media (max-width: 1365px) {
+  .header-arrow-company {
+    display: none;
   }
 }
 .company-subtitle {
@@ -3247,8 +3296,8 @@ html {
 .header-arrow-service:hover {
   -webkit-animation-name: header-arrow-service;
           animation-name: header-arrow-service;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-iteration-count: 1;
@@ -3260,30 +3309,38 @@ html {
 }
 @-webkit-keyframes header-arrow-service {
   0% {
-    bottom: -205px;
+    width: 80px;
   }
   25% {
-    bottom: -220px;
+    width: 90px;
+    right: -109px;
+    bottom: -210px;
   }
   75% {
-    bottom: -220px;
+    width: 90px;
+    right: -109px;
+    bottom: -210px;
   }
   100% {
-    bottom: -205px;
+    width: 80px;
   }
 }
 @keyframes header-arrow-service {
   0% {
-    bottom: -205px;
+    width: 80px;
   }
   25% {
-    bottom: -220px;
+    width: 90px;
+    right: -109px;
+    bottom: -210px;
   }
   75% {
-    bottom: -220px;
+    width: 90px;
+    right: -109px;
+    bottom: -210px;
   }
   100% {
-    bottom: -205px;
+    width: 80px;
   }
 }
 @media (max-width: 1919px) {
@@ -3295,8 +3352,8 @@ html {
   .header-arrow-service:hover {
     -webkit-animation-name: header-arrow-service-desc;
             animation-name: header-arrow-service-desc;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
+    -webkit-animation-duration: 0.75s;
+            animation-duration: 0.75s;
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
     -webkit-animation-iteration-count: 1;
@@ -3308,31 +3365,44 @@ html {
   }
   @-webkit-keyframes header-arrow-service-desc {
     0% {
-      bottom: -150px;
+      width: 80px;
     }
     25% {
-      bottom: -165px;
+      width: 90px;
+      right: -109px;
+      bottom: -156px;
     }
     75% {
-      bottom: -165px;
+      width: 90px;
+      right: -109px;
+      bottom: -156px;
     }
     100% {
-      bottom: -150px;
+      width: 80px;
     }
   }
   @keyframes header-arrow-service-desc {
     0% {
-      bottom: -150px;
+      width: 80px;
     }
     25% {
-      bottom: -165px;
+      width: 90px;
+      right: -109px;
+      bottom: -156px;
     }
     75% {
-      bottom: -165px;
+      width: 90px;
+      right: -109px;
+      bottom: -156px;
     }
     100% {
-      bottom: -150px;
+      width: 80px;
     }
+  }
+}
+@media (max-width: 1365px) {
+  .header-arrow-service {
+    display: none;
   }
 }
 .ddt-subtitle {
@@ -3461,7 +3531,6 @@ html {
      object-fit: none;
   background: url("../img/service/ddt-img-background.png");
   background-size: cover;
-  z-index: 1;
   -webkit-clip-path: circle(0 at 0 0);
           clip-path: circle(0 at 0 0);
 }
@@ -4628,8 +4697,9 @@ html {
 .ddt-faq {
   width: 1300px;
   height: auto;
-  margin: 200px auto 100px;
+  margin: 200px auto 0px;
   overflow: hidden;
+  background-color: #fdfdfd;
 }
 @media (max-width: 1919px) {
   .ddt-faq {
@@ -4693,7 +4763,8 @@ html {
   width: 1080px;
   height: auto;
   border-top: 2px solid #303030;
-  margin-bottom: 50px;
+  margin-bottom: 49px;
+  background-color: #ffffff;
 }
 @media (max-width: 1919px) {
   .ddt-faq-content {
@@ -4871,7 +4942,7 @@ html {
   border: none;
   background: none;
   outline: none;
-  background-color: #fdfdfd;
+  background-color: #ffffff;
 }
 .buttons:hover {
   color: #28C0E2;
@@ -4923,7 +4994,7 @@ html {
 }
 .buttons[aria-expanded='true'] + .accordion-content {
   opacity: 1;
-  max-height: 816px;
+  max-height: 350px;
   transition: all 0.75s linear;
 }
 .buttons[aria-expanded='true'] + .accordion-content::after {
@@ -4947,6 +5018,17 @@ html {
     width: 880px;
     height: 2px;
     background-color: #28C0E2;
+  }
+}
+@media (max-width: 1365px) {
+  .buttons[aria-expanded='true'] + .accordion-content {
+    max-height: 330px;
+  }
+}
+@media (max-width: 767px) {
+  .buttons[aria-expanded='true'] + .accordion-content {
+    max-height: 590px;
+    padding-bottom: 30px;
   }
 }
 .accordion-content {
@@ -5061,6 +5143,7 @@ html {
 .ddt-faq-text {
   width: 910px;
   margin-left: 30px;
+  margin-top: 25px;
   margin-bottom: 16px;
   font-family: "Satoshi-Regular", sans-serif;
   font-style: normal;
@@ -9191,8 +9274,8 @@ html {
 .header-arrow-careers:hover {
   -webkit-animation-name: header-arrow-careers;
           animation-name: header-arrow-careers;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-iteration-count: 1;
@@ -9204,30 +9287,38 @@ html {
 }
 @-webkit-keyframes header-arrow-careers {
   0% {
-    bottom: -205px;
+    width: 80px;
   }
   25% {
-    bottom: -220px;
+    width: 90px;
+    right: -109px;
+    bottom: -210px;
   }
   75% {
-    bottom: -220px;
+    width: 90px;
+    right: -109px;
+    bottom: -210px;
   }
   100% {
-    bottom: -205px;
+    width: 80px;
   }
 }
 @keyframes header-arrow-careers {
   0% {
-    bottom: -205px;
+    width: 80px;
   }
   25% {
-    bottom: -220px;
+    width: 90px;
+    right: -109px;
+    bottom: -210px;
   }
   75% {
-    bottom: -220px;
+    width: 90px;
+    right: -109px;
+    bottom: -210px;
   }
   100% {
-    bottom: -205px;
+    width: 80px;
   }
 }
 @media (max-width: 1919px) {
@@ -9242,8 +9333,8 @@ html {
   .header-arrow-careers:hover {
     -webkit-animation-name: header-arrow-careers-desc;
             animation-name: header-arrow-careers-desc;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
+    -webkit-animation-duration: 0.75s;
+            animation-duration: 0.75s;
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
     -webkit-animation-iteration-count: 1;
@@ -9255,30 +9346,38 @@ html {
   }
   @-webkit-keyframes header-arrow-careers-desc {
     0% {
-      bottom: -150px;
+      width: 70px;
     }
     25% {
-      bottom: -165px;
+      width: 80px;
+      right: -80px;
+      bottom: -155px;
     }
     75% {
-      bottom: -165px;
+      width: 80px;
+      right: -80px;
+      bottom: -155px;
     }
     100% {
-      bottom: -150px;
+      width: 70px;
     }
   }
   @keyframes header-arrow-careers-desc {
     0% {
-      bottom: -150px;
+      width: 70px;
     }
     25% {
-      bottom: -165px;
+      width: 80px;
+      right: -80px;
+      bottom: -155px;
     }
     75% {
-      bottom: -165px;
+      width: 80px;
+      right: -80px;
+      bottom: -155px;
     }
     100% {
-      bottom: -150px;
+      width: 70px;
     }
   }
 }
@@ -10435,8 +10534,8 @@ html {
 .header-arrow-case:hover {
   -webkit-animation-name: header-arrow-case;
           animation-name: header-arrow-case;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-iteration-count: 1;
@@ -10448,30 +10547,38 @@ html {
 }
 @-webkit-keyframes header-arrow-case {
   0% {
-    bottom: -205px;
+    width: 80px;
   }
   25% {
-    bottom: -220px;
+    width: 90px;
+    right: -109px;
+    bottom: -210px;
   }
   75% {
-    bottom: -220px;
+    width: 90px;
+    right: -109px;
+    bottom: -210px;
   }
   100% {
-    bottom: -205px;
+    width: 80px;
   }
 }
 @keyframes header-arrow-case {
   0% {
-    bottom: -205px;
+    width: 80px;
   }
   25% {
-    bottom: -220px;
+    width: 90px;
+    right: -109px;
+    bottom: -210px;
   }
   75% {
-    bottom: -220px;
+    width: 90px;
+    right: -109px;
+    bottom: -210px;
   }
   100% {
-    bottom: -205px;
+    width: 80px;
   }
 }
 @media (max-width: 1919px) {
@@ -10486,8 +10593,8 @@ html {
   .header-arrow-case:hover {
     -webkit-animation-name: header-arrow-case-desc;
             animation-name: header-arrow-case-desc;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
     -webkit-animation-iteration-count: 1;
@@ -10499,30 +10606,38 @@ html {
   }
   @-webkit-keyframes header-arrow-case-desc {
     0% {
-      bottom: -150px;
+      width: 70px;
     }
     25% {
-      bottom: -165px;
+      width: 80px;
+      right: -80px;
+      bottom: -156px;
     }
     75% {
-      bottom: -165px;
+      width: 80px;
+      right: -80px;
+      bottom: -156px;
     }
     100% {
-      bottom: -150px;
+      width: 70px;
     }
   }
   @keyframes header-arrow-case-desc {
     0% {
-      bottom: -150px;
+      width: 70px;
     }
     25% {
-      bottom: -165px;
+      width: 80px;
+      right: -80px;
+      bottom: -156px;
     }
     75% {
-      bottom: -165px;
+      width: 80px;
+      right: -80px;
+      bottom: -156px;
     }
     100% {
-      bottom: -150px;
+      width: 70px;
     }
   }
 }
@@ -14932,8 +15047,8 @@ html {
 .header-arrow-blog:hover {
   -webkit-animation-name: header-arrow-blog;
           animation-name: header-arrow-blog;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-iteration-count: 1;
@@ -14945,30 +15060,38 @@ html {
 }
 @-webkit-keyframes header-arrow-blog {
   0% {
-    bottom: -205px;
+    width: 80px;
   }
   25% {
-    bottom: -220px;
+    width: 90px;
+    right: -109px;
+    bottom: -210px;
   }
   75% {
-    bottom: -220px;
+    width: 90px;
+    right: -109px;
+    bottom: -210px;
   }
   100% {
-    bottom: -205px;
+    width: 80px;
   }
 }
 @keyframes header-arrow-blog {
   0% {
-    bottom: -205px;
+    width: 80px;
   }
   25% {
-    bottom: -220px;
+    width: 90px;
+    right: -109px;
+    bottom: -210px;
   }
   75% {
-    bottom: -220px;
+    width: 90px;
+    right: -109px;
+    bottom: -210px;
   }
   100% {
-    bottom: -205px;
+    width: 80px;
   }
 }
 @media (max-width: 1919px) {
@@ -14983,8 +15106,8 @@ html {
   .header-arrow-blog:hover {
     -webkit-animation-name: header-arrow-blog-desc;
             animation-name: header-arrow-blog-desc;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
+    -webkit-animation-duration: 0.75s;
+            animation-duration: 0.75s;
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
     -webkit-animation-iteration-count: 1;
@@ -14996,30 +15119,38 @@ html {
   }
   @-webkit-keyframes header-arrow-blog-desc {
     0% {
-      bottom: -150px;
+      width: 70px;
     }
     25% {
-      bottom: -165px;
+      width: 80px;
+      right: -80px;
+      bottom: -156px;
     }
     75% {
-      bottom: -165px;
+      width: 80px;
+      right: -80px;
+      bottom: -156px;
     }
     100% {
-      bottom: -150px;
+      width: 70px;
     }
   }
   @keyframes header-arrow-blog-desc {
     0% {
-      bottom: -150px;
+      width: 70px;
     }
     25% {
-      bottom: -165px;
+      width: 80px;
+      right: -80px;
+      bottom: -156px;
     }
     75% {
-      bottom: -165px;
+      width: 80px;
+      right: -80px;
+      bottom: -156px;
     }
     100% {
-      bottom: -150px;
+      width: 70px;
     }
   }
 }
@@ -16557,7 +16688,7 @@ Select c dropdown на JS
   -webkit-text-fill-color: transparent;
   background-size: 200% 100%;
   background-position: 100%;
-  transition: background-position 1s ease;
+  transition: background-position 0.5s ease;
 }
 .social-item-hover:hover {
   background-position: 0 100%;
@@ -16571,7 +16702,7 @@ Select c dropdown на JS
   line-height: 140%;
   color: #FDFDFD;
   text-transform: uppercase;
-  transition: 1s linear;
+  transition: 0.3s linear;
 }
 @media (max-width: 1919px) {
   .social-item a {
@@ -16789,43 +16920,43 @@ Select c dropdown на JS
 .footer-arrow:hover {
   -webkit-animation-name: footer-arrow;
           animation-name: footer-arrow;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
 }
-@-webkit-keyframes footer-arro {
+@-webkit-keyframes footer-arrow {
   0% {
-    top: -75px;
+    width: 58px;
   }
   25% {
-    top: -90px;
+    width: 68px;
+    right: -100px;
+    top: -80px;
   }
   75% {
-    top: -90px;
+    width: 68px;
+    right: -100px;
+    top: -80px;
   }
   100% {
-    top: -75px;
+    width: 58px;
   }
 }
-@keyframes footer-arro {
+@keyframes footer-arrow {
   0% {
-    top: -75px;
+    width: 58px;
   }
   25% {
-    top: -90px;
+    width: 68px;
+    right: -100px;
+    top: -80px;
   }
   75% {
-    top: -90px;
+    width: 68px;
+    right: -100px;
+    top: -80px;
   }
   100% {
-    top: -75px;
+    width: 58px;
   }
 }
 @media (max-width: 1919px) {
@@ -16838,43 +16969,43 @@ Select c dropdown на JS
   .footer-arrow:hover {
     -webkit-animation-name: footer-arrow-desc;
             animation-name: footer-arrow-desc;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
-    -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
-    -webkit-animation-iteration-count: 1;
-            animation-iteration-count: 1;
-    -webkit-animation-direction: normal;
-            animation-direction: normal;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+    -webkit-animation-duration: 0.75s;
+            animation-duration: 0.75s;
   }
   @-webkit-keyframes footer-arrow-desc {
     0% {
-      top: -70px;
+      width: 58px;
     }
     25% {
-      top: -85px;
+      width: 68px;
+      right: -75px;
+      top: -75px;
     }
     75% {
-      top: -85px;
+      width: 68px;
+      right: -75px;
+      top: -75px;
     }
     100% {
-      top: -70px;
+      width: 58px;
     }
   }
   @keyframes footer-arrow-desc {
     0% {
-      top: -70px;
+      width: 58px;
     }
     25% {
-      top: -85px;
+      width: 68px;
+      right: -75px;
+      top: -75px;
     }
     75% {
-      top: -85px;
+      width: 68px;
+      right: -75px;
+      top: -75px;
     }
     100% {
-      top: -70px;
+      width: 58px;
     }
   }
 }
